@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif', serif;
+}
+body{
+    background-color: rgb(201, 216, 236);
+   
+}
+.nav{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    width: 50px;
+    border-radius: 10px;
+    box-sizing: initial;
+    border-left: 0px solid #1338be ;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,91,253,1) 100%);
+    transition: width 0.5s;
+    overflow: hidden;
+    z-index: 900;
+}
+.nav:hover{
+    width: 210px;
+    z-index: 900;
+}
+.nav ul{
+    position:absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    padding-left:12px;
+    padding-top: 44px;
+    
+}
+
+.nav ul li{
+    margin-left: 0 ;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius:22px ;
+}
+.nav ul li:hover
+{
+    background-color :#fff;
+    
+}
+.nav ul li a{
+    position: relative;
+    display: block;
+    width:100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    
+}
+.nav ul li:hover a
+{
+    color: rgb(15, 15, 97);
+}
+
+.nav ul li a .icon
+{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: left;
+    
+}
+.nav ul li a .icon ion-icon{
+    font-size: 1.5em;
+} 
+.nav ul li a .title{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height:50px ;
+    white-space: normal;
+}
+.sci
+{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    display:flex ;
+    z-index: 900;
+}
+.sci ul{
+    position:absolute;
+    top: 75%;
+    right: 5px;
+    width: 100%;
+    padding-right:15px;
+    padding-top: 44px;}
+.sci ul li
+{
+    margin-right: 0 ;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+.sci li ion-icon
+{
+    font-size: 1.5em;
+    opacity: 0.7;
+    color: blue;
+
+}
+.sci li ion-icon:hover
+{
+    font-size: 2em; 
+    opacity: 1;
+}
+section{
+    height: auto;
+    
+}
+/*first section Home */
+
+.home .hm {
+    
+    height: 70vh;
+    background-color: rgb(144, 146, 168);
+    border-radius: 10px;
+    
+}
+.home .content{
+    margin-top:5vh ;
+    padding-top: 15vh;
+    margin-left: 300px;
+}
+.home div h4{
+    position: relative;
+    color: rgb(98, 225, 241);
+    
+}
+.home div h1{
+    color: rgb(15, 15, 75);
+    font-size: 48pt;
+}
+.home div h3{
+    min-height: 10px;
+    color: rgb(15, 15, 75);
+    margin-bottom: 10px;
+}
+.home div p{
+    position: relative;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 15px;
+    
+}
+.home .content img{
+    position: relative;
+    bottom: 35vh;
+    left: 55%;
+    width: 440px;
+    height: 540px;
+    
+}
+.home .btnH{
+    position: relative;
+    bottom: 75vh;
+    width:50%;
+    height: 50px;
+    background-color: #fff;
+    background-color: transparent;
+    
+}
+.home div .btn{
+    position: relative;
+    border-radius: 20px;
+    background-color: transparent;
+    border-color: rgb(71, 141, 247);
+    background-color: rgb(71, 141, 247) ;
+    border-width: none;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    font: bolder;
+    margin-left: 20px;
+    
+}
+.home .content button:hover{
+ box-shadow: 5px 5px 8px rgb(0, 89, 255),-5px -5px 8px rgb(0, 89, 255);
+}
+
+.home .off{
+    position: relative;
+    display: flex;
+    height: 2cm;
+    top: -5vh;
+    left: 20%;
+    width: 65%;
+    background-color: rgb(135, 182, 243);
+    border-radius: 45px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    padding-bottom:5vh ;
+}
+.home .off ul{
+    position: relative;
+    top: 75px;
+    left: 210px;
+    margin-top: -13vh;
+    margin-left: -9vh;
+    width: 100%;
+    list-style: none;
+}
+.home .off ul li {
+    display: flex;
+    display: inline-flex;
+    width: 180px;
+    margin-left: 20px;
+    
+}
+.home .off ul li p .soustitre::before{
+    content: "\a";
+    white-space: pre;
+    
+}
+.home .off ul li p .icon2{
+    position: relative; 
+    min-width: 60px;
+    height: 60px;
+    text-align: right;
+}
+.home .off ul li p .icon2 ion-icon{
+    position: relative;
+    top: 20px;
+    font-size: 2.5em;
+} 
+.home .titres{
+    position: relative;
+    display: inline;
+    padding-left: 10px;
+    height: 60px;
+    font: bolder;
+    white-space: normal;
+    
+}
+.home .off ul li p .soustitre{
+    position: relative;
+    left: 10px;
+    color: rgb(15, 15, 75);
+    font: bold;
+}
+/*second section*/
+.myintro{
+    padding-bottom: 5vh;
+}
+.myintro .img{
+    position: relative;
+    top: 15vh;
+    left: 40vh;
+    width: 50%;
+    float: left;
+}
+.myintro .contenuintro{
+    position: relative ;
+    top: 10vh;
+    float: right;
+    width:50%
+}
+.myintro .contenuintro h4{  
+    color: rgb(98, 225, 241); 
+}
+.myintro .contenuintro h1
+{ 
+    color: rgb(15, 15, 75);
+    font-size: 48pt;  
+}
+.myintro .contenuintro h2{
+    color: rgb(15, 15, 75);
+}
+.myintro .contenuintro .cont ion-icon{
+    position: relative;
+    top:5px;
+    font-size: 1.5em;
+    color: #1338be;
+    padding-right: 25px;
+}
+.myintro .contenuintro .cont .nesp{
+    font-weight: bold;
+    padding-right: 50px;
+}
+.myintro .contenuintro .cont .pt{
+    padding-right: 50px;
+}
+.myintro .contenuintro ul{
+    position: relative;
+    display: inline-flex;
+    list-style: none;
+    padding-top: 10px;
+    
+}
+.myintro .contenuintro ul li{
+
+    width: 90px;
+    margin-right: 50px;
+
+}
+.myintro .contenuintro ul li ion-icon{
+    color: #1338be;
+}
+.service{
+    position: relative;
+    top: 80vh;
+    
+}
+.sectiontitel{
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+    clear:both;
+    
+}
+.sectiontitel h4{
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(67, 117, 255);
+    
+}
+.sectiontitel,.Specialized,.portfolio,.testimonial,.contact h1{
+    text-align: center;
+    padding-top: 10px;
+    font: bolder;
+    color: rgb(15, 15, 75);
+}
+.service .content{
+    position: relative;
+    left: 25%;
+    width: 60%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+     
+}
+.service .content .boxcontent{
+    height: 80px;
+    margin-top: 10px;
+    background-color: rgb(182, 224, 243);
+    border-radius: 0 40px 0 0;
+}
+.service .content .boxcontent p{
+    position: relative;
+    font-weight: bold;
+}
+
+.service .content .boxcontent .innerchart{
+    height: 15px;
+    width: 100%;
+    position: relative;
+    top: 30px;
+    background-color: rgb(182, 224, 243);
+    box-shadow: inset -3px -3px 7px #ffffff73 ,inset 3px 3px 5px rgba(94, 104, 121, .288);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+
+}
+.service .content .boxcontent .chartbar{
+    height: 100%;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color:rgb(44, 94, 231); 
+   
+}
+.Specialized {
+    clear: both;
+    position: relative;
+    top: 95vh;height: 100%;
+    
+}
+.Specialized h4{
+    
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(67, 117, 255);
+    
+}
+.Specialized .row{
+    
+  
+    margin-left: 40px;
+    display:inline-flex ;
+    
+}
+
+.Specialized .row .card:hover{
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+.portfolio {
+    clear: both;
+    position: relative;
+    top: 95vh;
+    
+    
+}
+.portfolio h4{
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(67, 117, 255);
+    
+}
+.portfolio ul{
+   list-style: none;
+   width: 100%; 
+}
+.portfolio ul li {
+display: inline-flex;
+
+    
+}
+.portfolio ul li button {
+    margin-right: 10px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.portfolio ul li button:hover{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bolder;
+    
+}
+
+.portfolio .allproject{
+    position: relative;
+    top: 10vh;
+    display: inline;
+    
+}
+.portfolio .allproject #webdesign,#appmob,#graphic{
+    position: relative ;
+    left: 15%;
+    width: 75%;
+}
+
+.portfolio .allproject img{
+    height: 220px;
+    width: 230px;
+    margin: 20px;
+    border-radius: 22px;
+    box-shadow: 5px 5px 8px rgb(16, 123, 245),-5px -5px 8px rgb(16, 123, 245);   
+}
+.portfolio .allproject img:hover{
+    box-shadow: 10px 10px 8px rgb(16, 123, 245),-10px -10px 8px rgb(16, 123, 245);
+}
+.testimonial h4{
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(67, 117, 255);
+    
+    
+}
+.testimonial {
+    clear: both;
+    position: relative;
+    top: 115vh;  
+}
+.cardS{
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+  
+.cardS .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+ }
+ .cardS .image{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    float: left;
+    background: #7d2ae8;}
+ .cardS .cl::before{
+        content: "\a";
+        white-space: pre;
+        
+    }
+ .cardS .cl{
+        padding-top: 15px;
+        opacity: 0.5;
+    }
+    .card .client{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        
+      } 
+      .client .nomC{
+        font-size: 20px;
+        font-weight: 600;
+      }
+      
+      .client .cl{
+        font-size:15px;
+        font-weight: 500;
+      }
+      .cardS .rating{
+        display: flex;
+        align-items: center;
+        margin-top: 18px;
+      }
+      
+      .cardS .rating i{
+        font-size: 18px;
+        margin: 0 2px;
+        color: #2a66e8;
+      }
+  .cardS .image img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #fff;
+      }
+ .cardS .media-icons{
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+ }
+     
+ .contact {
+        clear: both;
+        position: relative;
+        top: 125vh;  
+    }
+.contact h4{
+        text-align: center;
+        padding-top: 20px;
+        color: rgb(67, 117, 255);
+        
+    }  
+.contact .contactform {
+    position: relative;
+    margin-top: 5vh;
+}  
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("img/bg.jpg") no-repeat center;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+.right{
+	padding: 25px 40px;
+}
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+.left{
+	height: 100%;
+}
+.left .call {
+    position: relative;
+    top: 50px;
+    
+}
+.left .call ion-icon{
+    position: relative;
+    top: 20px;
+    left: -10px;
+    background-color: #2a66e8;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+.left .call .textinfo{
+    position: relative;
+    left: 35px;
+    line-height: 0.8em;
+    opacity: 0.7;
+}
+.left .email{
+    margin-top: 80px;
+    margin-right:5px ;
+}
+.left .email ion-icon{
+    position: relative;
+    top: 20px;
+    left: -10px;
+    background-color: #2a66e8;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+.left .email .textinfo{
+    
+    position: relative;
+    text-align: left;
+    left: 45%;
+    line-height: 0.8em;
+    opacity: 0.7;
+}
+.left .local{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.left .local ion-icon{
+    position: relative;
+    top: 20px;
+    left: -10px;
+    background-color: #2a66e8;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+.left .local .textinfo{
+    
+    position: relative;
+    text-align: left;
+    left: 41%;
+    line-height: 0.8em;
+    opacity: 0.7;
+    
+}
+footer{
+    clear: both;
+    position: relative;
+    top: 135vh;  
+}
+
+.footer .nom h1{
+    color: #fff;
+    
+}
